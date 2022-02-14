@@ -1,11 +1,11 @@
-package hospitalEmployeeManagementSystem;
+package hospitalEmployeeManagementSystem.reporting;
 
 import hospitalEmployeeManagementSystem.domain.Employee;
 
 /**
  * @author Hammad: 12-Feb-2022
  */
-public class EmployeeReportFormatter {
+public class EmployeeReportFormatter extends ReportFormatter {
 
 	Employee anEmployee;
 	FormatType formatType;
