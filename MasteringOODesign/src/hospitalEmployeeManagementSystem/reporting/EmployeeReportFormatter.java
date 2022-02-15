@@ -7,10 +7,11 @@ import hospitalEmployeeManagementSystem.domain.Employee;
  */
 public class EmployeeReportFormatter extends ReportFormatter {
 
-	Employee anEmployee;
-	FormatType formatType;
+	public EmployeeReportFormatter(Employee employee, FormatType formatType) {
+		super(employee, formatType);
+	}
 
-	public void getFormattedEmployee() {
-		System.out.println("Returning formatted employee");
+	public String getFormattedEmployee() {
+		return getFormattedValue();
 	}
 }

@@ -5,8 +5,17 @@ package hospitalEmployeeManagementSystem.reporting;
  */
 public class ReportFormatter {
 
-	public ReportFormatter(Object object, FormatType formatType) {
+	String formattedOutput;
 
+	public ReportFormatter(Object object, FormatType formatType) {
+		switch (formatType) {
+		case XML:
+			formattedOutput = convertObjectToXML(object);
+			break;
+		case CSV:
+			formattedOutput = convertObjectToCSV(object);
+			break;
+		}
 	}
 
 	private String convertObjectToXML(Object object) {
@@ -18,7 +27,6 @@ public class ReportFormatter {
 	}
 
 	public String getFormattedValue() {
-		System.out.println("Returning formatted value");
-		return null;
+		return formattedOutput;
 	}
 }
