@@ -21,7 +21,7 @@ public class MakeTransaction {
 		List<Product> products = new ArrayList<Product>();
 		products.add(new Product(13, "First Product"));
 		products.add(new Product(14, "Second Product"));
-		CustomerTransaction transaction = new CustomerTransaction(new Customer(), products);
+		CustomerTransaction transaction = new CustomerTransaction(new Customer("Peggy"), products);
 		AccountsReceivable account = new AccountsReceivable(transaction);
 
 		System.out.println("**************Accounts************");

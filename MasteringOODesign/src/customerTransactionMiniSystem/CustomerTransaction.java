@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author Hammad: 17-Feb-2022
  */
-public class CustomerTransaction {
+public class CustomerTransaction implements Accounting, Reporting {
 
 	private Customer customer;
 	private List<Product> products;
@@ -25,10 +25,10 @@ public class CustomerTransaction {
 		return new Date();
 	}
 
-	public String getProductBreakdown() {
+	public String productBreakdown() {
 		String reportListing = "";
 		for (Product product : products) {
-			reportListing += product.getProductName();
+			reportListing += " | " + product.getProductName() + " | ";
 		}
 		return reportListing;
 	}
@@ -40,5 +40,4 @@ public class CustomerTransaction {
 	public void chargeCustomer() {
 		System.out.println("Charged Customer...");
 	}
-
 }

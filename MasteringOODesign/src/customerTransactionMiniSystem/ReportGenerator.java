@@ -5,7 +5,7 @@ package customerTransactionMiniSystem;
  */
 public class ReportGenerator {
 
-	private CustomerTransaction transactionObject;
+	private Reporting transactionObject;
 
 	public ReportGenerator(CustomerTransaction aTransaction) {
 		transactionObject = aTransaction;
@@ -13,6 +13,6 @@ public class ReportGenerator {
 
 	public void generateReport() {
 		System.out.println(transactionObject.getName() + " " + transactionObject.getDate() + " "
-				+ transactionObject.getProductBreakdown());
+				+ transactionObject.productBreakdown());
 	}
 }

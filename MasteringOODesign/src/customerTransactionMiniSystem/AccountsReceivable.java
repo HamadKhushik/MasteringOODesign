@@ -5,7 +5,7 @@ package customerTransactionMiniSystem;
  */
 public class AccountsReceivable {
 
-	private CustomerTransaction transactionObject;
+	private Accounting transactionObject;
 
 	public AccountsReceivable(CustomerTransaction aTransaction) {
 		transactionObject = aTransaction;
