@@ -14,7 +14,7 @@ import customerTransactionMiniSystem.ReportGenerator;
  * 
  * @author Hammad: 17-Feb-2022
  */
-public class MakeTransaction {
+public class App {
 
 	public static void main(String[] args) {
 

@@ -1,0 +1,4 @@
+Vehicle has an engine. Do not hard code the Engine type in the vehicle class but arrangements should be made to assign the engine to the vehicle dynamically. This is dependency injection, it makes the code a bit more 
+flexible and dynamic. 
+To achieve this, an Engine object is passed in the vehicle constructor. 
+Required Engine is created in the client(App.java in this instance), and passed in as argument to the Vehicle constructor and a car with desired attributes is created as opposed to hard-coded cars
